@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/gri"
+    tools:context=".fragments.SearchFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/gri"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/search"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_height="50dp"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:hint="Arama yap:Laptop,Araba ve diğerleri"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:lines="1"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:id="@+id/editSearch"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:id="@+id/textSearch"
+                android:layout_gravity="center"
+                android:text="Ara"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:id="@+id/card_location"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/selector"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:id="@+id/linear_gps"
+                android:background="@drawable/selector"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Aranacak Konum"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Aranacak Konum"
+                    android:textStyle="bold"
+                    android:id="@+id/location_name"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:background="@drawable/selector"
+            android:layout_weight="1"
+            android:id="@+id/card_category"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/linear_category"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/selector"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Aranacak Kategori"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Hepsi"
+                    android:textStyle="bold"
+                    android:id="@+id/category_name"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
