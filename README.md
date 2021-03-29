@@ -3,6 +3,9 @@
 <h3> Letgo uygulamasının benzerenin yapılması ve özgün özelliklerin eklenmesi amacı doğrultusunda geliştirilen projedir. (Devam ediyor) </h3>
 <h3> Ekran görüntüsü olan sayfalar çalışmaktadır. </h3>
 
+<h3> Uygulama sistemi api ile çalışmaktadır. Api laravel ile geliştirilmiştir. </h3>
+
+
 ### Giriş Yapılması
 <img src="letgo/giris.jpg"  height="400"  >
 
