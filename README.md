@@ -1,7 +1,7 @@
 # Letgo
 
-<h3> Letgo uygulamasının benzerenin yapılması ve özgün özelliklerin eklenmesi (Devam ediyor) </h3>
-
+<h3> Letgo uygulamasının benzerenin yapılması ve özgün özelliklerin eklenmesi amacı doğrultusunda geliştirilen projedir. (Devam ediyor) </h3>
+<h3> Ekran görüntüsü olan sayfalar çalışmaktadır. </h3>
 
 ### Giriş Yapılması
 <img src="letgo/giris.jpg"  height="400"  >
@@ -13,7 +13,7 @@
 <img src="letgo/anasayfa.jpg"  height="400"  >
 
 ### Anasayfa Kategori Seçimi
-<img src="letgo/anasayfa_kategori.jpg"  height="400"  >
+<img src="letgo/anasayfa-kategori.jpg"  height="400"  >
 
 ### İlan Verilmesi
 <img src="letgo/ekle.jpg"  height="400"  >
